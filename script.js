@@ -1136,3 +1136,10 @@ const qoutes = [
     topics: ["Inspirational", "Wisdom"],
   },
 ];
+btn.addEventListener("click", function () {
+  let random = Math.floor(Math.random() * qoutes.length);
+  qoute.innerHTML = qoutes[random].quote;
+  author.innerHTML = qoutes[random].author;
+  profession.innerHTML = qoutes[random].profession;
+  topic.innerHTML = qoutes[random].topics;
+});
